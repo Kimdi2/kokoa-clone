@@ -1,0 +1,16 @@
+.badge {
+  border-radius: 50%;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  color: white;
+  font-weight: 600;
+}
+.alarm {
+  height: 6px;
+  width: 6px;
+  font-weight: 600;
+}

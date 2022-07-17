@@ -1,0 +1,63 @@
+/* 
+  display: flex;                                                      (바꾸고 싶은 요소의 부모요소에 적용)
+  flex-direction: row(default) column row-reverse column-reverse;     (축 변경 row: 수평, column:수직)
+  justify-content: flex-start(default) center flex-end space-between; (주축)
+  align-items: flex-start(default) center flex-end;                   (교차축)
+  flex-wrap: wrap(화면이 작아지면 다음 줄로 넘어감) nowrap(default, 화면이 작아지면 비율에 맞춰 작아짐) wrap-reverse;
+*/
+/*
+  p span: p 자식에 존재하는 모든 span
+  p > span: p의 direct child
+  p + span: p 바로 다음(next)으로 오는 형제 span
+  p ~ span: p 다음(바로 다음이 아니여도 가능)으로 오는 형제 span
+*/
+/* BEM: Block Element Modifier(css naming rules) */
+/* icon: heroicons, fontawesome */
+/* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+/*
+  width 가 다른 것들을 한줄에서 일정하게 배열할 때 사용하는 방법
+  1. display flex를 이용해 정렬해본다.
+  2. 맞지 않는 것이 있으면, 그것의 길이를 100%에서 나눈다. ex) 3개면 33%, 5개면 25% 등
+  3. 가운데 정렬하고 싶은 것을 display:flex 및 justify-content: center 해준다.
+  4. 마지막 것을 justify-content:flex-end 해준다.
+*/
+/* @keyframes coinFlip {
+  0% {
+    transform: rotateX(0);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(180deg);
+  }
+}
+a {
+  color: wheat;
+  background-color: tomato;
+  text-decoration: none;
+  padding: 3px 5px;
+  border-radius: 5px;
+  font-size: 55px;
+  transition: all 1s ease-in-out;
+}
+a:hover {
+  border-radius: 35px;
+  color: tomato;
+  background-color: wheat;
+}
+div {
+  font-size: 55px;
+  animation: coinFlip linear 1s infinite;
+} */
+.a, .bb {
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+}
+.container .a:nth-child(1) {
+  background-color: red;
+}
+.container .a:nth-child(2) {
+  background-color: orange;
+}
